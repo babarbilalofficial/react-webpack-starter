@@ -1,0 +1,27 @@
+{
+  "presets": [
+    "react",
+    "es2015",
+    "stage-0"
+  ],
+  "env": {
+    "development": {
+      "plugins": []
+    },
+    "production": {
+      "plugins": []
+    }
+  },
+  "plugins": [
+    [
+      "module-resolver", 
+      {
+        "root": ["./src"],
+        "alias": {
+          "src": "./src"
+        }
+      }
+    ],
+    "react-loadable/babel"
+  ]
+}
