@@ -15,7 +15,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 let pathsToClean = [
-  // 'dist'
+  'dist'
 ];
 
 let cleanOptions = {
@@ -106,7 +106,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      src: path.resolve(__dirname, 'src')
+      src: path.resolve(__dirname, 'src'),
+      assets: path.resolve(__dirname, 'src/assets')
     }
   }
 };
