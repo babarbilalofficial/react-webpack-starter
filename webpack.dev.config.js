@@ -4,7 +4,7 @@ const path = require('path');
 const proxy = require('http-proxy-middleware');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const config = require('./src/config');
+const config = require('./src/config/dev.env');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './index.html',
